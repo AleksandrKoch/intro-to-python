@@ -22,18 +22,18 @@ print(total_cost)
 
 average_speed = 60
 hours_available = 4
-total_distance = ??? # calculate here
-print(???)  # print the result
+total_distance = average_speed * hours_available
+print(total_distance)
 
 # ---------------------------------------------------------------------
 # Exercise 2 - Pizza Slices
 # A pizza is cut into 8 equal slices. Calculate and print how many
 # slices each person will get if there are 4 people sharing the pizza.
 
-pizza_slices = ???
-people = ???
-slices_per_person = ???
-print(???)
+pizza_slices = 8
+people = 4
+slices_per_person = pizza_slices / people
+print(slices_per_person)
 
 # ---------------------------------------------------------------------
 # Exercise 3 - Shopping Discount
@@ -45,17 +45,23 @@ print(???)
 # print the result.
 # The formula to count the discounted price:
 # multiply the original price by the discount percentage and divide by 100.
-
+original_price = 80
+discount_percentage = 20
+dicounted_price = original_price * discount_percentage / 100
+final_price = original_price - dicounted_price
+print(final_price)
 
 # ---------------------------------------------------------------------
 # Exercise 4 - Temperature Conversion
 # You are designing a weather app and need to convert temperature
 # from Celsius to Fahrenheit for display. Convert a given
 # temperature and print the result.
-# To convert Celsis to Fahrenheit you need to multiply
+# To convert Celsius to Fahrenheit you need to multiply
 # the temperature in Celsius by 9/5 and add 32 to the result
 
-
+temperature_celcius = 100
+temperature_fahrenheit = (9 / 5 * temperature_celcius) + 32
+print(temperature_fahrenheit)
 # ---------------------------------------------------------------------
 # Exercise 5 - Gardening
 # You're planning a garden and need to calculate the area of
@@ -64,6 +70,9 @@ print(???)
 # To calculate the area of a circle, multiply π (~3.141) with the square of
 # the circle's radius.
 
+radius = 3.5
+flowerbed_area = 3.141 * 3.5 * 3.5
+print(flowerbed_area)
 
 # ---------------------------------------------------------------------
 # Exercise 6 - Convert Temperature
@@ -74,6 +83,9 @@ print(???)
 # temperature for display.
 # As an example, if the temperature is 24.8ºC, you need to print 24.
 
+current_temperature = 24.8
+rounded_temerature = int(current_temperature)
+print(rounded_temerature)
 
 # ---------------------------------------------------------------------
 # Exercise 7 - Baking Cookies
@@ -82,6 +94,11 @@ print(???)
 # print the number of chocolate chips in each cookie and the
 # remaining chips.
 
+chocolate_chip = 17
+cookies = 5
+chocolate_chip_per_cookie = int(chocolate_chip / cookies)
+remaining_chips = chocolate_chip - chocolate_chip_per_cookie
+print(f"Chips in each cookie {chocolate_chip_per_cookie}, Remaining chips {remaining_chips}")
 
 # ---------------------------------------------------------------------
 # Exercise 8 - Fix the Code - Event total earnings
@@ -99,11 +116,12 @@ print(???)
 #
 # For the values provided we are expecting a total earning of 750000,
 # however the code is not working correctly. Can you fix it?
-1st_event_participants = 250
-2nd_event_participants = 500
-ticket_$ = 1000
 
-total_earnings = (1st_event_total + 2nd_event_total) * ticket_$
+first_event_participants = 250
+second_event_participants = 500
+ticket_price = 1000
+
+total_earnings = (first_event_participants + second_event_participants) * ticket_price
 print(total_earnings)
 
 
@@ -129,8 +147,8 @@ student_1_age = 15
 student_2_age = 17
 student_3_age = 13
 
-students_age_mean = student_1_age + student_2_age + student_3_age / 3
-print(students_mean_age)
+students_age_mean = (student_1_age + student_2_age + student_3_age) / 3
+print(students_age_mean)
 
 # ---------------------------------------------------------------------
 # Challenge (OPTIONAL!): Separating Digits of a Number
@@ -154,6 +172,14 @@ number = 1597
 digit_1 = number % 10
 number = number // 10
 
+digit_2 = number % 10
+number = number // 10
+
+digit_3 = number % 10
+number = number // 10
+
+digit_4 = number % 10
+number = number // 10
 # print(digit_1) # will print 7
 # print(number)  # will print 159
 
